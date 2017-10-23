@@ -9,13 +9,39 @@ body, html{
   position: absolute;
   height: 100%;
   width: 100%;
+  overflow: scroll;
 }
+
+@media screen and (min-width: 750px) {
+  .appCon{
+    width: 700px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .mount{
+    padding-top:90px;
+    padding-bottom:25px;
+  }
+  .appCon{
+    width: 95%;
+  }
+  .resumeBttn{
+    width:calc(70% - 20px)!important;
+  }
+  .about{
+    width: 90%!important;
+  }
+  .summary{
+    padding:0px 5px 0px 5px;
+  }
+}
+
 .mount{
   display: table-cell;
   vertical-align: middle;
 }
 .appCon{
-  width: 700px;
   box-sizing: content-box;
   margin:0 auto;
   background: white;
